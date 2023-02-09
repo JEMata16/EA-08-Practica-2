@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <title>Sitio de reseña de libros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=""/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav>
+                <a href="profile.html">
+                    <img src="img/abstract-user-flat-4.png" alt="" class="logo-nav-profile"/>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="featured.html">Reseñas destacadas</a></li>
+                    <li><a href="recent.html">Reseñas recientes</a></li>
+                    <li><a href="submit.html">Subir una reseña</a></li>
+                    <li><a href="recommended.html">Libros recomendados</a></li>
+                    <li><a href="bmovies.html">Libros con películas</a></li>
+                </ul>
+            </nav>
+        <main>
+            <section id="featured">
+                <h2>Reseñas destacadas</h2><hr>
+                <div class="review">
+                    <h3>Titulo del libro</h3>
+                    <p style= "text-align: center">Texto de la reseña. Y un resumen del libro</p>
+                    <p>
+                        <strong>Autor:</strong> Nombre del autor<br>
+                        <strong>Rating:</strong> 4.5/5
+                    </p>
+                    <figure>
+                        <img src="img/fuego-y-sangre-cancion-de-hielo-y-fuego-txalaparta-eus.jpg" alt=""/>
+                    </figure>
+                </div>
+            </section>
+            <section id="submit">
+                <h2>Subir una reseña</h2><hr>
+                <article>
+                    <form name="reseña" action="/reseña/libro" method="POST">
+                        <fieldset class="form">
+                            <label>Nombre del lbro</label>
+                            <input type="text" name="libro" value="" size="40">
+                        </fieldset>
+                        <fieldset class="form">
+                            <label>Autor</label>
+                            <input type="text" name="autor" value="" size="40">
+                        </fieldset>
+                        <fieldset class="form">
+                            <label>Rating</label>
+                            <input type="number" name="rating" value="" max="5">
+                        </fieldset>
+                        <input type="submit" value="Enviar"> 
+                    </form>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
+
+
